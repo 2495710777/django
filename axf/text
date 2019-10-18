@@ -1,0 +1,107 @@
+邮箱激活
+    （1）发送邮件
+    （2）点击激活链接
+    （3）邮件的生存时间
+    （4）邮件激活的点击次数
+
+
+    发送邮件的准备工作
+            （1）send_mail()方法
+                参数
+                    EMAIL_HOST
+                    EMAIL_PORT
+                    EMAIL_HOST_USER
+                    EMAIL_HOST_PASSWORD  授权码
+            （2）设置授权码
+                    点击设置--》pop3/smtp/imap -->客户端授权码--》开启
+                    设置 注意设置授权码不能和密码一致，如果一致则提示不允许
+
+
+    发送邮件的实现步骤：
+            （1）settings中设置
+                    EMAIL_HOST='smtp.163.com'
+                    EMAIL_PORT=25
+                    EMAIL_HOST_USER='yulin_ljing@163.com'
+                    EMAIL_HOST_PASSWORD='lijing0501115'
+            （2）在视图函数中
+                    subject='红浪漫洗浴'
+
+                    message = '充值1000送免费洗澡一次'
+
+                    from_email='yulin_ljing@163.com'
+
+                    recipient_list = ['yulin_ljing@163.com']
+
+
+                    send_mail(subject=subject,message=message,from_email=from_email,recipient_list=recipient_list)
+
+
+    邮件的生存时间
+             token
+             cache
+                  cache.set(key,value,timeout)
+
+                  cache.set()
+
+                  cache.get(key)
+
+
+    验证码：
+            （1）导入四个字体 到fonts中
+
+
+    登录：
+             先验证验证码
+                忽略大小写
+
+             在验证用户名字和密码
+                先通过用户名字查询对象
+                找到对象之后 通过对象的密码和输入的密码进行比较
+                激活状态后可以登录
+
+
+作业：
+    我的
+        1 构建我的页面
+        2 点击未登录跳转到登录页面
+            使用id进行js跳转
+                1 window.open('/axfuser/login/',target='_self')
+                2 window.location.href('/axfuser/register/');
+        3 点击注册跳转到注册页面
+        4 登录之后显示用户头像
+        5 登录之后显示退出，可以点击退出
+        6 未登录没有显示退出的
+    购物车
+        1 未登录点击购物车  那么会跳转到登录页面
+        2 购物车页面构建
+        3 点击闪购的+ 然后将商品添加到购物车中
+
+购物的数据变化以数据库的为主，不能在前端修改
+
+
+1 点击闪购中的+号  然后将商品添加到购物车中
+            （1）判断是否登录  如果没登录 那么跳转到登录页面
+            （2）判断是否登录  如果登录
+                                查看购物车中是否有该商品数据 如果有 数量加1
+                                                        如果没有 添加到购物车
+        2 购物车中的数据 在购物车中展示
+        3 购物车中数据的减法   减到1的时候 删除
+            在这可以使用cart.id进行查询，比使用goodsid和user_id好多了
+
+            选中取反　　not
+            ajax的参数　u url
+                       d data:{}
+                       t type
+                       d datatype
+                       success:function()
+        4
+
+在jquery中遍历的时候，需要使用this获取元素，否则只获取第一个元素
+
+
+在用中间件优化代码的时候：给request设置一个属性叫做user，是一个数据对象，然后可以在任何位置使用
+
+
+
+端口号改为ssl的465
+email_use_ssl = true

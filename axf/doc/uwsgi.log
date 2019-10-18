@@ -1,0 +1,38 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Oct 18 11:50:11 2019] ***
+compiled with version: 6.3.0 20170516 on 17 October 2019 11:31:25
+os: Linux-4.15.0-30deepin-generic #31 SMP Fri Nov 30 04:29:02 UTC 2018
+nodename: lwq-PC
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/lwq/zuoye/Django/day07/axf/doc
+writing pidfile to uwsgi.pid
+detected binary path: /home/lwq/zuoye/Django/.django1905/bin/uwsgi
+chdir() to /home/lwq/zuoye/Django/day07/axf
+your processes number limit is 31326
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8888).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Oct 18 11:51:43 2019] ***
+compiled with version: 6.3.0 20170516 on 17 October 2019 11:31:25
+os: Linux-4.15.0-30deepin-generic #31 SMP Fri Nov 30 04:29:02 UTC 2018
+nodename: lwq-PC
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/lwq/zuoye/Django/day07/axf/doc
+writing pidfile to uwsgi.pid
+detected binary path: /home/lwq/zuoye/Django/.django1905/bin/uwsgi
+chdir() to /home/lwq/zuoye/Django/day07/axf
+your processes number limit is 31326
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8888).
+bind(): Address already in use [core/socket.c line 769]
