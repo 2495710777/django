@@ -40,7 +40,7 @@ Pillow==5.2.0
 pyasn1==0.4.7
 pycparser==2.19
 pycryptodomex==3.7.2
-PyJWT==1.7.1
+PyJWT==2.4.0
 PyMySQL==0.9.3
 pyOpenSSL==19.0.0
 python-alipay-sdk==1.10.1
