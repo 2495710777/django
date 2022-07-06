@@ -33,7 +33,7 @@ gunicorn==19.6.0
 idna==2.8
 jpush==3.3.0
 kombu==3.0.37
-lxml==4.3.1
+lxml==4.9.1
 ndg-httpsclient==0.5.1
 oauthlib==1.0.3
 Pillow==5.2.0
